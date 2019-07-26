@@ -1,0 +1,1 @@
+- Just some issues resolved by searching in StackOverFlow
