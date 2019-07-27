@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+Created in 24/7/2019
 
-### Project Title
-Replace the Project Title
+### Explore-US-Bikeshare-Data
+Udacity Data Analyst Degree - Project II
+ Bikeshare Python Project
 
-### Description
-Describe what your project is about and what it does
+### Overview
+In this project, I will explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. Using Python, I will write a code import the data and answer interesting questions about it by computing descriptive statistics. I will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+### Software Needed ?
+To complete this project, i'll require the following softwares:
 
-### Files used
-Include the files used
+Python
+A text editor, like Sublime or Atom
+A terminal application
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Credits goes to Udacity Classroom and Student Studyhub that helped me alot to complete this project
