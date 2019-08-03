@@ -19,9 +19,9 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
-      city = input("\nWhich city would you like to filter by? New York City, Chicago or Washington? Enter City name Exactly\n")
-      if city.lower() not in ('new york city', 'chicago', 'washington'):
-        print("Sorry, Check Your Entered City And Try again.")
+      cityEnterd = input("\nWhich city would you like to filter by? New York City, Chicago or Washington? Enter City name Exactly\n")
+      if cityEnterd.lower() not in ('new york city', 'chicago', 'washington'):
+        print("Sorry, Enterd city is incorrect , try again later please .")
         continue
       else:
         break
@@ -48,10 +48,10 @@ def get_filters():
 
 
     print('-'*40)
-    return city, month, day
+    return cityEnterd, month, day
 
 
-def load_data(city, month, day):
+def load_data(cityEnterd, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -64,7 +64,7 @@ def load_data(city, month, day):
     """
 
     # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city.lower()])
+    df = pd.read_csv(CITY_DATA[cityEnterd.lower()])
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -275,8 +275,8 @@ def display_data(df):
 
 def main():
     while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+        cityEnterd, month, day = get_filters()
+        df = load_data(cityEnterd, month, day)
 
         time_stats(df)
         station_stats(df)
